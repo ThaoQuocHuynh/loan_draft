@@ -7,6 +7,7 @@ import path from 'path';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(), visualizer({ open: false }) as PluginOption],
+  base: '/loan-os/',
   build: {
     rollupOptions: {
       output: {
